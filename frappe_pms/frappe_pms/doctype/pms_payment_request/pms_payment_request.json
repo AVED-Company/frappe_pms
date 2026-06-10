@@ -8,6 +8,14 @@
  "track_changes": 1,
  "fields": [
   {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "PMS Project",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
    "fieldname": "employee",
    "fieldtype": "Link",
    "label": "Employee",

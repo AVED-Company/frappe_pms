@@ -137,6 +137,13 @@
    "in_list_view": 1
   },
   {
+   "fieldname": "is_starred",
+   "fieldtype": "Check",
+   "label": "Starred / High Priority",
+   "default": 0,
+   "in_list_view": 1
+  },
+  {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
@@ -208,5 +215,6 @@
    "fieldtype": "Text Editor",
    "label": "Description"
   }
- ]
+ ],
+ "kanban_field": "status"
 }

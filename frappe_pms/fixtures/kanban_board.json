@@ -1,0 +1,70 @@
+[
+ {
+  "doctype": "Kanban Board",
+  "name": "PMS Task Board",
+  "reference_doctype": "PMS Task",
+  "field_name": "status",
+  "private": 0,
+  "columns": [
+   {
+    "column_name": "Open",
+    "status": "Active",
+    "order": "[]"
+   },
+   {
+    "column_name": "In Progress",
+    "status": "Active",
+    "order": "[]"
+   },
+   {
+    "column_name": "Review",
+    "status": "Active",
+    "order": "[]"
+   },
+   {
+    "column_name": "Completed",
+    "status": "Active",
+    "order": "[]"
+   },
+   {
+    "column_name": "Cancelled",
+    "status": "Archived",
+    "order": "[]"
+   }
+  ]
+ },
+ {
+  "doctype": "Kanban Board",
+  "name": "PMS Project Board",
+  "reference_doctype": "PMS Project",
+  "field_name": "status",
+  "private": 0,
+  "columns": [
+   {
+    "column_name": "Planning",
+    "status": "Active",
+    "order": "[]"
+   },
+   {
+    "column_name": "Active",
+    "status": "Active",
+    "order": "[]"
+   },
+   {
+    "column_name": "On Hold",
+    "status": "Active",
+    "order": "[]"
+   },
+   {
+    "column_name": "Completed",
+    "status": "Active",
+    "order": "[]"
+   },
+   {
+    "column_name": "Cancelled",
+    "status": "Archived",
+    "order": "[]"
+   }
+  ]
+ }
+]

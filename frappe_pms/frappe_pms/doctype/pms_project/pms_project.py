@@ -3,10 +3,17 @@ from frappe.model.document import Document
 
 
 class PMSProject(Document):
-    def before_save(self):
-        self.budget_used = frappe.db.sql(
-            "SELECT IFNULL(SUM(amount),0) FROM `tabPMS Expense` WHERE project=%s AND status='Approved'",
-            self.name
-        )[0][0]
-        if self.status == "Completed" and not self.actual_end_date:
-            self.actual_end_date = frappe.utils.today()
+
+    def after_save(self):
+        self._update_progress()
+
+    def _update_progress(self):
+        total = frappe.db.count("PMS Task", {"project": self.name})
+        if not total:
+            if self.progress_pct != 0:
+                frappe.db.set_value("PMS Project", self.name, "progress_pct", 0)
+            return
+        done = frappe.db.count("PMS Task", {"project": self.name, "status": "Completed"})
+        pct = round(done / total * 100, 1)
+        if pct != self.progress_pct:
+            frappe.db.set_value("PMS Project", self.name, "progress_pct", pct)
