@@ -1,0 +1,220 @@
+{
+ "name": "PMS Payment Request",
+ "doctype": "DocType",
+ "module": "Frappe PMS",
+ "autoname": "RFP-.YYYY.-.####",
+ "title_field": "description",
+ "search_fields": "employee,status",
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "User",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "default": "Today",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted\nDepartment Review\nFinance Review\nApproved\nPaid\nCancelled",
+   "default": "Draft",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "sec_payment",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "default": "SAR"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "\nCash\nBank Transfer\nCheck",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1,
+   "bold": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "sec_reason",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Reason / Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec_items",
+   "fieldtype": "Section Break",
+   "label": "Expense Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "PMS Payment Request Item"
+  },
+  {
+   "fieldname": "sec_docs",
+   "fieldtype": "Section Break",
+   "label": "Supporting Documents"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Main Attachment"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Additional Notes"
+  },
+  {
+   "fieldname": "sec_audit",
+   "fieldtype": "Section Break",
+   "label": "Approval Trail",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "submitted_by",
+   "fieldtype": "Data",
+   "label": "Submitted By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "submitted_on",
+   "fieldtype": "Datetime",
+   "label": "Submitted On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_a1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dept_approved_by",
+   "fieldtype": "Data",
+   "label": "Dept. Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dept_approved_on",
+   "fieldtype": "Datetime",
+   "label": "Dept. Approved On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_a2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fin_approved_by",
+   "fieldtype": "Data",
+   "label": "Finance Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fin_approved_on",
+   "fieldtype": "Datetime",
+   "label": "Finance Approved On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_a3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "final_approved_by",
+   "fieldtype": "Data",
+   "label": "Final Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "final_approved_on",
+   "fieldtype": "Datetime",
+   "label": "Final Approved On",
+   "read_only": 1
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "report": 1,
+   "import": 1
+  },
+  {
+   "role": "PMS Admin",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "report": 1
+  },
+  {
+   "role": "PMS Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "export": 1,
+   "report": 1
+  },
+  {
+   "role": "PMS Member",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "if_owner": 1,
+   "report": 1
+  }
+ ]
+}

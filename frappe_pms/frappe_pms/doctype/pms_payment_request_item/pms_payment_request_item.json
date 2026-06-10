@@ -1,0 +1,54 @@
+{
+ "name": "PMS Payment Request Item",
+ "doctype": "DocType",
+ "module": "Frappe PMS",
+ "istable": 1,
+ "editable_grid": 1,
+ "track_changes": 0,
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description",
+   "in_list_view": 1,
+   "reqd": 1,
+   "columns": 4
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Data",
+   "label": "Account / Cost Center",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "in_list_view": 1,
+   "reqd": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Receipt"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  }
+ ]
+}
