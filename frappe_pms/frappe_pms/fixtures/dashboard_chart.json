@@ -1,0 +1,43 @@
+[
+ {
+  "doctype": "Dashboard Chart",
+  "name": "Project Status Distribution",
+  "chart_name": "Project Status Distribution",
+  "chart_type": "Group By",
+  "document_type": "PMS Project",
+  "group_by_type": "Count",
+  "group_by_based_on": "status",
+  "type": "Donut",
+  "timeseries": 0,
+  "is_public": 1,
+  "filters_json": "[]"
+ },
+ {
+  "doctype": "Dashboard Chart",
+  "name": "Task Priority Distribution",
+  "chart_name": "Task Priority Distribution",
+  "chart_type": "Group By",
+  "document_type": "PMS Task",
+  "group_by_type": "Count",
+  "group_by_based_on": "priority",
+  "type": "Bar",
+  "timeseries": 0,
+  "is_public": 1,
+  "filters_json": "[]"
+ },
+ {
+  "doctype": "Dashboard Chart",
+  "name": "Monthly Hours Logged",
+  "chart_name": "Monthly Hours Logged",
+  "chart_type": "Sum",
+  "document_type": "PMS Time Log",
+  "based_on": "date",
+  "value_based_on": "hours",
+  "type": "Bar",
+  "timespan": "Last Year",
+  "time_interval": "Monthly",
+  "timeseries": 1,
+  "is_public": 1,
+  "filters_json": "[]"
+ }
+]

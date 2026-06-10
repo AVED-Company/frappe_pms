@@ -1,0 +1,87 @@
+[
+ {
+  "doctype": "Workspace",
+  "name": "PMS",
+  "label": "PMS",
+  "module": "Frappe PMS",
+  "category": "Modules",
+  "icon": "project",
+  "is_standard": 1,
+  "public": 1,
+  "content": "[]",
+  "links": [
+   {
+    "label": "Projects",
+    "type": "Card Break",
+    "hidden": 0
+   },
+   {
+    "label": "PMS Project",
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "PMS Project",
+    "onboard": 1
+   },
+   {
+    "label": "PMS Phase",
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "PMS Phase"
+   },
+   {
+    "label": "PMS Milestone",
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "PMS Milestone"
+   },
+   {
+    "label": "Tasks",
+    "type": "Card Break",
+    "hidden": 0
+   },
+   {
+    "label": "PMS Task",
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "PMS Task",
+    "onboard": 1
+   },
+   {
+    "label": "Time & Cost",
+    "type": "Card Break",
+    "hidden": 0
+   },
+   {
+    "label": "PMS Time Log",
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "PMS Time Log",
+    "onboard": 1
+   },
+   {
+    "label": "PMS Expense",
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "PMS Expense",
+    "onboard": 1
+   },
+   {
+    "label": "Reports",
+    "type": "Card Break",
+    "hidden": 0
+   },
+   {
+    "label": "Project Hierarchy",
+    "type": "Link",
+    "link_type": "Report",
+    "link_to": "Project Hierarchy"
+   },
+   {
+    "label": "PMS Dashboard",
+    "type": "Link",
+    "link_type": "Dashboard",
+    "link_to": "PMS Dashboard"
+   }
+  ]
+ }
+]

@@ -259,5 +259,10 @@ app_license = "mit"
 
 # Fixtures
 fixtures = [
-    {"dt": "Role", "filters": [["role_name", "in", ["PMS Admin", "PMS Manager", "PMS Member"]]]}
+    {"dt": "Role",           "filters": [["role_name", "in", ["PMS Admin", "PMS Manager", "PMS Member"]]]},
+    {"dt": "Number Card",    "filters": [["name", "in", ["Active Projects", "Open Tasks", "Overdue Tasks", "Hours This Month"]]]},
+    {"dt": "Dashboard Chart","filters": [["name", "in", ["Project Status Distribution", "Task Priority Distribution", "Monthly Hours Logged"]]]},
+    {"dt": "Dashboard",      "filters": [["name", "=", "PMS Dashboard"]]},
+    {"dt": "Workspace",      "filters": [["name", "=", "PMS"]]},
+]]]}
 ]

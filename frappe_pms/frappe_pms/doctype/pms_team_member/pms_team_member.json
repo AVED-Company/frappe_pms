@@ -19,7 +19,9 @@
   "role_in_project",
   "allocation_pct",
   "start_date",
-  "end_date"
+  "end_date",
+  "employee",
+  "hourly_rate"
  ],
  "fields": [
   {
@@ -53,6 +55,19 @@
    "fieldname": "end_date",
    "fieldtype": "Date",
    "label": "End Date",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "hourly_rate",
+   "fieldtype": "Currency",
+   "label": "Hourly Rate",
    "in_list_view": 1
   }
  ]

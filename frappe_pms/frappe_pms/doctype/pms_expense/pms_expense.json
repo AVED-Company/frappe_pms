@@ -77,7 +77,11 @@
   "approved_by",
   "section_details",
   "description",
-  "receipt"
+  "receipt",
+  "section_erp",
+  "expense_claim",
+  "col_erp",
+  "erp_cost_center"
  ],
  "fields": [
   {
@@ -157,6 +161,27 @@
    "fieldname": "receipt",
    "fieldtype": "Attach",
    "label": "Receipt"
+  },
+  {
+   "fieldname": "section_erp",
+   "fieldtype": "Section Break",
+   "label": "ERP Integration"
+  },
+  {
+   "fieldname": "expense_claim",
+   "fieldtype": "Link",
+   "label": "Expense Claim",
+   "options": "Expense Claim"
+  },
+  {
+   "fieldname": "col_erp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erp_cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
   }
  ]
 }

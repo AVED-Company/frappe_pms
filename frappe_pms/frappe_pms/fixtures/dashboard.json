@@ -1,0 +1,38 @@
+[
+ {
+  "doctype": "Dashboard",
+  "name": "PMS Dashboard",
+  "dashboard_name": "PMS Dashboard",
+  "module": "Frappe PMS",
+  "is_default": 1,
+  "is_standard": 1,
+  "charts": [
+   {
+    "chart": "Project Status Distribution",
+    "width": "Half"
+   },
+   {
+    "chart": "Task Priority Distribution",
+    "width": "Half"
+   },
+   {
+    "chart": "Monthly Hours Logged",
+    "width": "Full"
+   }
+  ],
+  "cards": [
+   {
+    "card": "Active Projects"
+   },
+   {
+    "card": "Open Tasks"
+   },
+   {
+    "card": "Overdue Tasks"
+   },
+   {
+    "card": "Hours This Month"
+   }
+  ]
+ }
+]

@@ -1,0 +1,24 @@
+{
+ "doctype": "Report",
+ "name": "Project Hierarchy",
+ "report_name": "Project Hierarchy",
+ "ref_doctype": "PMS Project",
+ "report_type": "Script Report",
+ "is_standard": "Yes",
+ "module": "Frappe PMS",
+ "disabled": 0,
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "PMS Admin"
+  },
+  {
+   "role": "PMS Manager"
+  },
+  {
+   "role": "PMS Member"
+  }
+ ]
+}

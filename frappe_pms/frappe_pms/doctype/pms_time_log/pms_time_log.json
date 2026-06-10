@@ -74,7 +74,11 @@
   "hours",
   "status",
   "section_desc",
-  "description"
+  "description",
+  "employee",
+  "billable",
+  "billing_rate",
+  "timesheet"
  ],
  "fields": [
   {
@@ -142,6 +146,31 @@
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "billable",
+   "fieldtype": "Check",
+   "label": "Billable",
+   "default": "0"
+  },
+  {
+   "fieldname": "billing_rate",
+   "fieldtype": "Currency",
+   "label": "Billing Rate",
+   "depends_on": "eval:doc.billable==1"
+  },
+  {
+   "fieldname": "timesheet",
+   "fieldtype": "Link",
+   "label": "Timesheet",
+   "options": "Timesheet",
+   "read_only": 1
   }
  ]
 }

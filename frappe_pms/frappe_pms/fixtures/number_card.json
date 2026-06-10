@@ -1,0 +1,43 @@
+[
+ {
+  "doctype": "Number Card",
+  "name": "Active Projects",
+  "label": "Active Projects",
+  "document_type": "PMS Project",
+  "function": "Count",
+  "filters_json": "[[\"PMS Project\", \"status\", \"=\", \"Active\"]]",
+  "color": "#5e64ff",
+  "is_public": 1
+ },
+ {
+  "doctype": "Number Card",
+  "name": "Open Tasks",
+  "label": "Open Tasks",
+  "document_type": "PMS Task",
+  "function": "Count",
+  "filters_json": "[[\"PMS Task\", \"status\", \"not in\", [\"Completed\", \"Cancelled\"]]]",
+  "color": "#f08700",
+  "is_public": 1
+ },
+ {
+  "doctype": "Number Card",
+  "name": "Overdue Tasks",
+  "label": "Overdue Tasks",
+  "document_type": "PMS Task",
+  "function": "Count",
+  "filters_json": "[[\"PMS Task\", \"due_date\", \"<\", \"Today\"], [\"PMS Task\", \"status\", \"not in\", [\"Completed\", \"Cancelled\"]]]",
+  "color": "#e24c4c",
+  "is_public": 1
+ },
+ {
+  "doctype": "Number Card",
+  "name": "Hours This Month",
+  "label": "Hours This Month",
+  "document_type": "PMS Time Log",
+  "function": "Sum",
+  "aggregate_function_based_on": "hours",
+  "filters_json": "[[\"PMS Time Log\", \"date\", \"Timespan\", \"this month\"]]",
+  "color": "#2490ef",
+  "is_public": 1
+ }
+]
