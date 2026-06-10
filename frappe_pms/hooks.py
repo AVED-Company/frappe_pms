@@ -264,5 +264,4 @@ fixtures = [
     {"dt": "Dashboard Chart","filters": [["name", "in", ["Project Status Distribution", "Task Priority Distribution", "Monthly Hours Logged"]]]},
     {"dt": "Dashboard",      "filters": [["name", "=", "PMS Dashboard"]]},
     {"dt": "Workspace",      "filters": [["name", "=", "PMS"]]},
-]]]}
 ]
