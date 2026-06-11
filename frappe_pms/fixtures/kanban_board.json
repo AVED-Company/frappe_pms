@@ -31,7 +31,8 @@
     "status": "Archived",
     "order": "[]"
    }
-  ]
+  ],
+  "kanban_board_name": "PMS Task Board"
  },
  {
   "doctype": "Kanban Board",
@@ -65,6 +66,7 @@
     "status": "Archived",
     "order": "[]"
    }
-  ]
+  ],
+  "kanban_board_name": "PMS Project Board"
  }
 ]
