@@ -1,86 +1,156 @@
 [
  {
-  "doctype": "Workspace",
-  "name": "PMS",
-  "label": "PMS",
+  "name": "Project Management",
+  "label": "Project Management",
+  "title": "Project Management",
   "module": "Frappe PMS",
-  "category": "Modules",
   "icon": "project",
-  "is_standard": 1,
+  "indicator_color": "blue",
   "public": 1,
-  "content": "[]",
+  "content": "[{\"id\": \"HTmFJDs0Iz\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Active Projects\", \"col\": 3}}, {\"id\": \"0K6CVptk7E\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Open Tasks\", \"col\": 3}}, {\"id\": \"fIgfExhmVr\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Overdue Tasks\", \"col\": 3}}, {\"id\": \"ePhdVe871E\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Hours This Month\", \"col\": 3}}, {\"id\": \"NUwZUimDqz\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Project Status Distribution\", \"col\": 6}}, {\"id\": \"MDwYUdMET6\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Task Priority Distribution\", \"col\": 6}}, {\"id\": \"KHz98Gjp62\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Monthly Hours Logged\", \"col\": 12}}, {\"id\": \"lIyFMiqNkf\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Project Management</b></span>\", \"col\": 12}}, {\"id\": \"vHnEDlDsGZ\", \"type\": \"card\", \"data\": {\"card_name\": \"Projects\", \"col\": 4}}, {\"id\": \"O8WoBZcH0p\", \"type\": \"card\", \"data\": {\"card_name\": \"Tasks\", \"col\": 4}}, {\"id\": \"AJ6rSwMrVn\", \"type\": \"card\", \"data\": {\"card_name\": \"Time & Cost\", \"col\": 4}}, {\"id\": \"cPi9dGC1Gu\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"AceyPukRiF\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}, {\"id\": \"yHQLZCpy1C\", \"type\": \"card\", \"data\": {\"card_name\": \"Payment Requests\", \"col\": 4}}]",
   "links": [
    {
-    "label": "Projects",
     "type": "Card Break",
-    "hidden": 0
+    "label": "Projects",
+    "hidden": 0,
+    "link_type": "DocType",
+    "link_to": null,
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
+    "onboard": 0
    },
    {
-    "label": "PMS Project",
     "type": "Link",
+    "label": "PMS Project",
+    "hidden": 0,
     "link_type": "DocType",
     "link_to": "PMS Project",
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
     "onboard": 1
    },
    {
+    "type": "Link",
     "label": "PMS Phase",
-    "type": "Link",
+    "hidden": 0,
     "link_type": "DocType",
-    "link_to": "PMS Phase"
+    "link_to": "PMS Phase",
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
+    "onboard": 0
    },
    {
+    "type": "Link",
     "label": "PMS Milestone",
-    "type": "Link",
+    "hidden": 0,
     "link_type": "DocType",
-    "link_to": "PMS Milestone"
+    "link_to": "PMS Milestone",
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
+    "onboard": 0
    },
    {
-    "label": "Tasks",
     "type": "Card Break",
-    "hidden": 0
+    "label": "Tasks",
+    "hidden": 0,
+    "link_type": "DocType",
+    "link_to": null,
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
+    "onboard": 0
    },
    {
-    "label": "PMS Task",
     "type": "Link",
+    "label": "PMS Task",
+    "hidden": 0,
     "link_type": "DocType",
     "link_to": "PMS Task",
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
     "onboard": 1
    },
    {
-    "label": "Time & Cost",
     "type": "Card Break",
-    "hidden": 0
+    "label": "Time & Cost",
+    "hidden": 0,
+    "link_type": "DocType",
+    "link_to": null,
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
+    "onboard": 0
    },
    {
-    "label": "PMS Time Log",
     "type": "Link",
+    "label": "PMS Time Log",
+    "hidden": 0,
     "link_type": "DocType",
     "link_to": "PMS Time Log",
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
     "onboard": 1
    },
    {
-    "label": "PMS Expense",
     "type": "Link",
+    "label": "PMS Expense",
+    "hidden": 0,
     "link_type": "DocType",
     "link_to": "PMS Expense",
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
     "onboard": 1
    },
    {
-    "label": "Reports",
     "type": "Card Break",
-    "hidden": 0
+    "label": "Reports",
+    "hidden": 0,
+    "link_type": "DocType",
+    "link_to": null,
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
+    "onboard": 0
    },
    {
+    "type": "Link",
     "label": "Project Hierarchy",
-    "type": "Link",
+    "hidden": 0,
     "link_type": "Report",
-    "link_to": "Project Hierarchy"
+    "link_to": "Project Hierarchy",
+    "report_ref_doctype": "PMS Project",
+    "dependencies": null,
+    "only_for": null,
+    "onboard": 0
    },
    {
-    "label": "PMS Dashboard",
+    "type": "Card Break",
+    "label": "Payment Requests",
+    "hidden": 0,
+    "link_type": "DocType",
+    "link_to": null,
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
+    "onboard": 0
+   },
+   {
     "type": "Link",
-    "link_type": "Dashboard",
-    "link_to": "PMS Dashboard"
+    "label": "PMS Payment Request",
+    "hidden": 0,
+    "link_type": "DocType",
+    "link_to": "PMS Payment Request",
+    "report_ref_doctype": null,
+    "dependencies": null,
+    "only_for": null,
+    "onboard": 1
    }
   ]
  }

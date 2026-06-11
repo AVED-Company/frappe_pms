@@ -263,7 +263,7 @@ fixtures = [
     {"dt": "Number Card",    "filters": [["name", "in", ["Active Projects", "Open Tasks", "Overdue Tasks", "Hours This Month"]]]},
     {"dt": "Dashboard Chart","filters": [["name", "in", ["Project Status Distribution", "Task Priority Distribution", "Monthly Hours Logged"]]]},
     {"dt": "Dashboard",      "filters": [["name", "=", "PMS Dashboard"]]},
-    {"dt": "Workspace",      "filters": [["name", "=", "PMS"]]},
+    {"dt": "Workspace",      "filters": [["name", "=", "Project Management"]]},
     {"dt": "Kanban Board",   "filters": [["name", "in", ["PMS Task Board", "PMS Project Board"]]]},
     {"dt": "Print Format",   "filters": [["name", "=", "Payment Request"]]},
 ]
